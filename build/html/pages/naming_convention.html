@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. Python Naming Conventions &mdash; CodingConvention 0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.1.0/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.1.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="CodingConvention 0 documentation" href="../index.html" />
+
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+<!-- RTD Extra Head -->
+
+
+
+<!-- 
+Read the Docs is acting as the canonical URL for your project. 
+If you want to change it, more info is available in our docs:
+  http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="http://.readthedocs.org//latest/pages/naming_convention.html" />
+
+<script type="text/javascript">
+  // This is included here because other places don't have access to the pagename variable.
+  var READTHEDOCS_DATA = {
+    project: "",
+    version: "",
+    language: "",
+    page: "pages/naming_convention",
+    theme: "",
+    docroot: "",
+    source_suffix: "",
+    api_host: ""
+  }
+  // Old variables
+  var doc_version = "";
+  var doc_slug = "";
+  var page_name = "pages/naming_convention";
+  var html_theme = "";
+</script>
+<!-- RTD Analytics Code -->
+<!-- Included in the header because you don't have a footer block. -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17997319-1']);
+  _gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- end RTD Analytics Code -->
+<!-- end RTD <extrahead> -->
+
+  </head>
+  <body>
+
+  <div id="navbar" class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">
+          CodingConvention</a>
+        <span class="navbar-text navbar-version pull-left"><b>0</b></span>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"></ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">1. Python Naming Conventions</a><ul>
+<li><a class="reference internal" href="#general">1.1 General</a></li>
+<li><a class="reference internal" href="#packages">1.2 Packages</a></li>
+<li><a class="reference internal" href="#modules">1.3 Modules</a></li>
+<li><a class="reference internal" href="#classes">1.4 Classes</a></li>
+<li><a class="reference internal" href="#global-module-level-variables">1.5 Global (module-level) Variables</a></li>
+<li><a class="reference internal" href="#instance-variables">1.6 Instance Variables</a></li>
+<li><a class="reference internal" href="#methods">1.7 Methods</a></li>
+<li><a class="reference internal" href="#method-arguments">1.8 Method Arguments</a></li>
+<li><a class="reference internal" href="#functions">1.9 Functions</a></li>
+<li><a class="reference internal" href="#constants">1.10 Constants</a></li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+              
+            
+            
+            
+            
+              <li class="hidden-sm">
+<div id="sourcelink">
+  <a href="../_sources/pages/naming_convention.txt"
+     rel="nofollow">Source</a>
+</div></li>
+            
+          </ul>
+
+          
+            
+<form class="navbar-form navbar-right" action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+          
+        </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      
+  <div class="section" id="python-naming-conventions">
+<span id="naming-convention"></span><h1>1. Python Naming Conventions<a class="headerlink" href="#python-naming-conventions" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="general">
+<h2>1.1 General<a class="headerlink" href="#general" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Avoid using names that are too general or too wordy. Strike a good balance between the two.</li>
+<li>Bad: data_structure, my_list, info_map, dictionary_for_the_purpose_of_storing_data_representing_word_definitions</li>
+<li>Good: user_profile, menu_options, word_definitions</li>
+<li>Don’t be a jackass and name things “O”, “l”, or “I”</li>
+</ul>
+</div>
+<div class="section" id="packages">
+<h2>1.2 Packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Package names should be all lower case</li>
+<li>When multiple words are needed, an underscore should separate them</li>
+<li>It is usually preferable to stick to 1 word names</li>
+</ul>
+</div>
+<div class="section" id="modules">
+<h2>1.3 Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Module names should be all lower case</li>
+<li>When multiple words are needed, an underscore should separate them</li>
+<li>It is usually preferable to stick to 1 word names</li>
+</ul>
+</div>
+<div class="section" id="classes">
+<h2>1.4 Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Class names should follow the UpperCaseCamelCase convention</li>
+<li>Python&#8217;s built-in classes, however are typically lowercase words</li>
+<li>Exception classes should end in “Error”</li>
+</ul>
+</div>
+<div class="section" id="global-module-level-variables">
+<h2>1.5 Global (module-level) Variables<a class="headerlink" href="#global-module-level-variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Global variables should be all lowercase</li>
+<li>Words in a global variable name should be separated by an underscore</li>
+</ul>
+</div>
+<div class="section" id="instance-variables">
+<h2>1.6 Instance Variables<a class="headerlink" href="#instance-variables" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Instance variable names should be all lower case</li>
+<li>Words in an instance variable name should be separated by an underscore</li>
+<li>Non-public instance variables should begin with a single underscore</li>
+<li>If an instance name needs to be mangled, two underscores may begin its name</li>
+</ul>
+</div>
+<div class="section" id="methods">
+<h2>1.7 Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Method names should be all lower case</li>
+<li>Words in an method name should be separated by an underscore</li>
+<li>Non-public method should begin with a single underscore</li>
+<li>If a method name needs to be mangled, two underscores may begin its name</li>
+</ul>
+</div>
+<div class="section" id="method-arguments">
+<h2>1.8 Method Arguments<a class="headerlink" href="#method-arguments" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Instance methods should have their first argument named ‘self’.</li>
+<li>Class methods should have their first argument named ‘cls’</li>
+</ul>
+</div>
+<div class="section" id="functions">
+<h2>1.9 Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Function names should be all lower case</li>
+<li>Words in a function name should be separated by an underscore</li>
+</ul>
+</div>
+<div class="section" id="constants">
+<h2>1.10 Constants<a class="headerlink" href="#constants" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Constant names must be fully capitalized</li>
+<li>Words in a constant name should be separated by an underscore</li>
+</ul>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+  <div class="container">
+    <p class="pull-right">
+      <a href="#">Back to top</a>
+      
+    </p>
+    <p>
+        &copy; Copyright 2014, Dev Team.<br/>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.2.2.<br/>
+    </p>
+  </div>
+</footer>
+  </body>
+</html>
