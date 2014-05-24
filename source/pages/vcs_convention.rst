@@ -23,16 +23,23 @@
 2.2 Git
 ============================================
 
-2.2.1 Commit
+2.2.1 Commiting
 --------------------------------------------
 
 2.2.1.1 Commit Messages
 ############################################
 
-* Commit messages consist of two parts: a short summary of changes to be limited to 50
+* Commit messages consist of:
+   * A short summary of changes made to be limited to 50 characters in width. This line should not end with a period.
+   * A blank line
+   * Additional paragraphs providing more detail, separated by blank lines, and limited to 72 characters in width.
+   * Bullet points may also be used, and may be indicated by a '*' or a '-'
+* The commit message should be written in the imperative tone, that is, as if commanding somebody to make your changes
+   * Good: "Fix the time zone bug and change the path"
+   * Bad: "Fixed the time zone bug and changed the path"
 
-2.2.1.2 Interactive Rebase
+2.2.1.2 Commit Size
 ############################################
-* Testing webhooks. REMOVE THIS!!!
-
-
+* Commits should address one issue at a time.
+* Those that contain multiple unrelated changes should be split appropriately.
+* Adjacent commits that each contain partial changes related to the same feature should be squashed together
