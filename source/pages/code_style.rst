@@ -1,33 +1,33 @@
 .. _code_style:
 
-1. Python Coding Style Conventions
+3. Python Coding Style Conventions
 ============================================
 
-1.1 Whitespace
+3.1 Whitespace
 --------------------------------------------
 
-1.1.1 Indentation
+3.1.1 Indentation
 ############################################
 
 * Lines should be indented with a multiple of 4 spaces depending on indent level
 * Hanging indents, code that is a continuation of the line above, should be indented to the next level
 * Use spaces exclusively, no tabs!
 
-1.1.2 Blank Lines
+3.1.2 Blank Lines
 ############################################
 
 * Leave 2 blank lines between class definitions and module-level functions
 * Leave 1 blank line between methods in a class
 * Use blank lines as needed in functions, methods, and modules to visually split up logical blocks of code
 
-1.1.3 Spaces In Code
+3.1.3 Spaces In Code
 ############################################
 
 * Surround binary operators with a space on each side
 * Do not include spaces around '=' when used to indicate a default argument or keyword argument
 * In all other cases, extraneous spaces are frowned upon
 
-1.2 Imports
+3.2 Imports
 --------------------------------------------
 
 * Imports should occur at the top of the module, after any module docstring
@@ -35,14 +35,14 @@
 * "From ... import ..."-style imports may be combined together on one line if possible
 * Wildcard imports should only be used when absolutely necessary, otherwise only import the modules to be used
 
-1.2 Code Blocks
+3.2 Code Blocks
 --------------------------------------------
 
 * Do not use parenthesis in the condition for a code block header unless it would be otherwise appropriate to use parenthesis around that condition
 * Do not use any single line code blocks. Even those with a single statement in the body should occupy multiple lines
 
 
-1.3 Comments
+3.3 Comments
 --------------------------------------------
 
 * First and foremost, comments should be up to date and accurate. When updating code, always make sure to update any comments that refer to it
@@ -52,7 +52,7 @@
 * Clever humor is acceptable on occasion
 * Do not merely summarize the code that follows. State its overall purpose, justify its inclusion, or explain quirks that other programmers may need to know
 
-1.3.1 Docstring Comments
+3.3.1 Docstring Comments
 ###########################################
 
 * Docstring comments should consist of a short summary line, optionally (but usually) followed by a blank line, then additional paragraphs with further explanation
