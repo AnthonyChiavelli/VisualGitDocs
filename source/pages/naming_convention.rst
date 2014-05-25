@@ -9,7 +9,8 @@
 * Avoid using names that are too general or too wordy. Strike a good balance between the two.
 * Bad: data_structure, my_list, info_map, dictionary_for_the_purpose_of_storing_data_representing_word_definitions
 * Good: user_profile, menu_options, word_definitions
-* Don’t be a jackass and name things “O”, “l”, or “I” 
+* Don’t be a jackass and name things “O”, “l”, or “I”
+* When using CamelCase names, capitalize all letters of an abbreviation (e.g. HTTPServer)
 
 1.2 Packages
 --------------------------------------------
@@ -78,5 +79,3 @@
 	
 * Constant names must be fully capitalized
 * Words in a constant name should be separated by an underscore
-
-
