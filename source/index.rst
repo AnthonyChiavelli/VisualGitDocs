@@ -19,6 +19,6 @@ This guide is based on PEP8. If information is found to be lacking here, go with
 
 :doc:`pages/naming_convention`
 
-:doc:`pages/vcs_convention`
+:doc:`pages/contributing`
 
 :doc:`pages/code_style`

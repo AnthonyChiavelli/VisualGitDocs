@@ -1,0 +1,256 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Contributing to the Project &mdash; CodingConvention 0 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <link rel="top" title="CodingConvention 0 documentation" href="../index.html" />
+ 
+<!-- RTD Extra Head -->
+
+
+
+<!-- 
+Read the Docs is acting as the canonical URL for your project. 
+If you want to change it, more info is available in our docs:
+  http://docs.readthedocs.org/en/latest/canonical.html
+-->
+<link rel="canonical" href="http://.readthedocs.org//latest/pages/contributing.html" />
+
+<script type="text/javascript">
+  // This is included here because other places don't have access to the pagename variable.
+  var READTHEDOCS_DATA = {
+    project: "",
+    version: "",
+    language: "",
+    page: "pages/contributing",
+    theme: "",
+    docroot: "",
+    source_suffix: "",
+    api_host: ""
+  }
+  // Old variables
+  var doc_version = "";
+  var doc_slug = "";
+  var page_name = "pages/contributing";
+  var html_theme = "";
+</script>
+<!-- RTD Analytics Code -->
+<!-- Included in the header because you don't have a footer block. -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-17997319-1']);
+  _gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<!-- end RTD Analytics Code -->
+<!-- end RTD <extrahead> -->
+
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="../index.html">CodingConvention 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="contributing-to-the-project">
+<span id="contributing"></span><h1>Contributing to the Project<a class="headerlink" href="#contributing-to-the-project" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="roles-and-responsibilities">
+<h2>1. Roles and Responsibilities<a class="headerlink" href="#roles-and-responsibilities" title="Permalink to this headline">¶</a></h2>
+<p>There are four main roles for contributing, based on the <a class="reference external" href="https://github.com/yui/yui3/wiki/Contributor-Model#2-roles-and-responsibilities">YUI Contributor Model</a>. They are outlined below.</p>
+<div class="section" id="users">
+<h3>1.1. Users<a class="headerlink" href="#users" title="Permalink to this headline">¶</a></h3>
+<p>Users are community members who have a need for the project. Anyone can be a User; there are no special requirements. Common User contributions include evangelizing the project (e.g., display a link on a website and raise awareness through word-of-mouth), informing developers of strengths and weaknesses from a new user perspective, or providing moral support (a &#8220;thank you&#8221; goes a long way).</p>
+<p>Users who continue to engage with the project and its community will often become more and more involved. Such Users may find themselves becoming Contributors, as described in the next section.</p>
+</div>
+<div class="section" id="contributors">
+<h3>1.2. Contributors<a class="headerlink" href="#contributors" title="Permalink to this headline">¶</a></h3>
+<p>Contributors are community members who contribute in concrete ways to the project, most often in the form of code and/or documentation. Anyone can become a Contributor, and contributions can take many forms. There is no expectation of commitment to the project, no specific skill requirements, and no selection process.</p>
+<p>As Contributors gain experience and familiarity with the project, their profile within, and commitment to, the community will increase. At some stage, they may find themselves being nominated for committership by an existing Committer.</p>
+</div>
+<div class="section" id="committers">
+<h3>1.3. Committers<a class="headerlink" href="#committers" title="Permalink to this headline">¶</a></h3>
+<p>Committers are community members who have shown that they are committed to the continued development of the project through ongoing engagement with the community. Committers are given push access to the project&#8217;s GitHub repo and must abide by the project&#8217;s Contribution Standards, including milestones such as feature complete and code freeze.</p>
+<p>While committership indicates a valued member of the community who has demonstrated a healthy respect for the project&#8217;s aims and objectives, their work continues to be reviewed by Reviewers (see below) before acceptance in an official release.</p>
+<p>To become a Committer, one must have shown a willingness and ability to participate in the project as a team player. Typically, a potential Committer will need to show that they have an understanding of and alignment with the project, its objectives, and its strategy. They will also have provided valuable contributions to the project over a period of time and, specifically, a minimum of 8 qualifying pull requests. What&#8217;s a qualifying pull request? One that carries significant technical weight and requires little effort to accept because it’s well documented and tested.</p>
+<p>New Committers can be nominated by any existing Committer. Once they have been nominated, there will be a discussion and vote by the Reviewers. While there is no formal system in place for this right now, Reviewers will try to use their best judgement, always keeping the project&#8217;s best interests in mind.</p>
+<p>It is important to recognize that committership is a privilege, not a right. That privilege must be earned and once earned it can be removed by the Reviewers (see next section) in extreme circumstances. However, under normal circumstances committership exists for as long as the Committer wishes to continue engaging with the project.</p>
+<p>A Committer who shows an above-average level of contribution to the project, particularly with respect to its strategic direction and long-term health, may be nominated to become a Reviewer, described below.</p>
+</div>
+<div class="section" id="reviewers">
+<h3>1.4. Reviewers<a class="headerlink" href="#reviewers" title="Permalink to this headline">¶</a></h3>
+<p>Reviewers are individuals identified as &#8220;project admins&#8221; for the project on GitHub. Reviewers have additional responsibilities over and above those of a Committer. These responsibilities ensure the smooth running of the project. Reviewers are expected to review code contributions, approve changes to this document, and manage the copyrights within the project outputs.</p>
+<p>Reviewers&#8217; contributions can be reviewed by other Reviewers, but this is not explicitly required. Reviewers do not have significant authority over other members of the community, although it is the Reviewers that vote on new Committers. They also make decisions when community consensus cannot be reached.</p>
+<p>A Committer is invited to become a Reviewer by existing Reviewers. An existing Committer may be considered for Reviewer status only after they have submitted 40 qualifying pull requests of technical significance that have been accepted without significant rework into the project. A nomination will result in discussion and then a vote by the existing Reviewers.</p>
+</div>
+</div>
+<div class="section" id="github">
+<h2>2. GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="forking">
+<h3>2.1. Forking<a class="headerlink" href="#forking" title="Permalink to this headline">¶</a></h3>
+<p>To begin working on the project, you need to grab the latest code first. This can be done by <a class="reference external" href="https://help.github.com/articles/fork-a-repo">forking</a> the repository.</p>
+</div>
+<div class="section" id="pull-requests">
+<h3>2.1. Pull Requests<a class="headerlink" href="#pull-requests" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>All contributions to this project must be made through <a class="reference external" href="https://help.github.com/articles/using-pull-requests">Pull Requests</a>. Pull requests are reviewed on a first come first serve basis by at least one of the Reviewers. In order to be accepted, the submitted code must meet the following criteria:</dt>
+<dd><ul class="first last simple">
+<li>It must be apparently free of bugs, or if intractable bugs are present and the code is still useful, bugs must be clearly documented and relevant <a class="reference external" href="https://github.com/AnthonyReid99/VisualGit/issues">issues</a> must be created on GitHub</li>
+<li>It must meet all of the coding and documenting conventions laid out in these documents</li>
+<li>It must integrate well with existing code</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="pulling-from-upstream">
+<h3>2.2. Pulling from Upstream<a class="headerlink" href="#pulling-from-upstream" title="Permalink to this headline">¶</a></h3>
+<p>To get the latest changes from the original repository, you need to <a class="reference external" href="https://help.github.com/articles/fork-a-repo#pull-in-upstream-changes">pull from upstream</a>.</p>
+</div>
+<div class="section" id="issue-tracking">
+<h3>2.3. Issue Tracking<a class="headerlink" href="#issue-tracking" title="Permalink to this headline">¶</a></h3>
+<p>GitHub&#8217;s <a class="reference external" href="https://guides.github.com/features/issues/">Issues</a> system will be used to track known bugs and issues, as well as manage feature requests.</p>
+</div>
+</div>
+<div class="section" id="git">
+<h2>3. Git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="committing">
+<h3>3.1. Committing<a class="headerlink" href="#committing" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="commit-messages">
+<h4>3.1.1. Commit Messages<a class="headerlink" href="#commit-messages" title="Permalink to this headline">¶</a></h4>
+<dl class="docutils">
+<dt>Commit messages consist of:</dt>
+<dd><ul class="first last simple">
+<li>A short summary of changes made to be limited to 50 characters in width. This line should not end with a period, and should always be followed by a blank line.</li>
+<li>Additional paragraphs providing more detail, separated by blank lines, and limited to 72 characters in width.</li>
+<li>Bullet points may also be used, and may be indicated by a &#8216;*&#8217; or a &#8216;-&#8216;</li>
+</ul>
+</dd>
+</dl>
+<ul>
+<li><dl class="first docutils">
+<dt>The commit message should be written in the imperative tone, that is, as if commanding somebody to make your changes</dt>
+<dd><ul class="first last simple">
+<li>Good: &#8220;Fix the time zone bug and change the path&#8221;</li>
+<li>Bad: &#8220;Fixed the time zone bug and changed the path&#8221;</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>For more on why this is good practice, check out <a class="reference external" href="http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html">this article</a>.</p>
+</div>
+<div class="section" id="commit-size">
+<h4>3.1.2. Commit Size<a class="headerlink" href="#commit-size" title="Permalink to this headline">¶</a></h4>
+<p>Commits should address one issue at a time. Those that contain multiple unrelated changes should be split appropriately. Adjacent commits that each contain partial changes related to the same feature should be squashed together. Read up on <a class="reference external" href="http://git-scm.com/book/en/Git-Tools-Rewriting-History">rewriting commit history</a> for more on managing commit size.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Contributing to the Project</a><ul>
+<li><a class="reference internal" href="#roles-and-responsibilities">1. Roles and Responsibilities</a><ul>
+<li><a class="reference internal" href="#users">1.1. Users</a></li>
+<li><a class="reference internal" href="#contributors">1.2. Contributors</a></li>
+<li><a class="reference internal" href="#committers">1.3. Committers</a></li>
+<li><a class="reference internal" href="#reviewers">1.4. Reviewers</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#github">2. GitHub</a><ul>
+<li><a class="reference internal" href="#forking">2.1. Forking</a></li>
+<li><a class="reference internal" href="#pull-requests">2.1. Pull Requests</a></li>
+<li><a class="reference internal" href="#pulling-from-upstream">2.2. Pulling from Upstream</a></li>
+<li><a class="reference internal" href="#issue-tracking">2.3. Issue Tracking</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#git">3. Git</a><ul>
+<li><a class="reference internal" href="#committing">3.1. Committing</a><ul>
+<li><a class="reference internal" href="#commit-messages">3.1.1. Commit Messages</a></li>
+<li><a class="reference internal" href="#commit-size">3.1.2. Commit Size</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../_sources/pages/contributing.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="../index.html">CodingConvention 0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2014, Dev Team.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
