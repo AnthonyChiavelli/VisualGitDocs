@@ -50,7 +50,7 @@ Python Naming Conventions
 7. Methods
 ==========
 * Method names should be all lower case
-* Words in an method name should be separated by an underscore
+* Words in a method name should be separated by an underscore
 * Non-public method should begin with a single underscore
 * If a method name needs to be mangled, two underscores may begin its name
 
